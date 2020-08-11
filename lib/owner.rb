@@ -30,7 +30,7 @@ class Owner
    self.all.clear
  end 
  def buy_cat 
-   
+   Cat.new
  def list_pets
    @dogs = self.dogs.count 
    @cats = self.cats.count
