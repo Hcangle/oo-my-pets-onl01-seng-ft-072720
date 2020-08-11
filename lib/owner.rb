@@ -7,12 +7,15 @@ class Owner
  def initialize(name)
    @name = name 
    @species = "human"
+   @@owners << self 
  end 
  
+ def self.all 
+   @@owners 
+ end 
  
-   
- def say_species 
-   "I am a #{@spceaies}."
+   def say_species 
+   "I am a #{@species}."
  end 
  
  
