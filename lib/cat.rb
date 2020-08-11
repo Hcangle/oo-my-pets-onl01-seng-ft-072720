@@ -8,6 +8,11 @@ class Cat
     @name = name
     @owner = owner 
     @mood = "nervous"
-    
+    @@cats << self
   end 
+  
+  def cats.all 
+    @@cats 
+  end 
+  
 end
