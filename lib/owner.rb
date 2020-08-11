@@ -29,7 +29,8 @@ class Owner
  def self.reset_all 
    self.all.clear
  end 
- 
+ def buy_cat 
+   
  def list_pets
    @dogs = self.dogs.count 
    @cats = self.cats.count
