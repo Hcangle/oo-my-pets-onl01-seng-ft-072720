@@ -33,6 +33,8 @@ class Owner
  def buy_cat 
    Cat.new(name, self)
   end 
+  
+  
     
  def list_pets
    @dogs = self.dogs.count 
