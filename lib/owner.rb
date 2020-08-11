@@ -34,7 +34,9 @@ class Owner
    Cat.new(name, self)
   end 
   
-  
+  def buy_dog 
+   Dog.new(name, self)
+  end 
     
  def list_pets
    @dogs = self.dogs.count 
