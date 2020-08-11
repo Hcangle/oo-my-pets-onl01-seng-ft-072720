@@ -2,12 +2,12 @@ class Owner
  attr_accessor :cats, :dogs
  attr_reader :species, :name
  
- @@owners = [] 
+ @@all = [] 
  
  def initialize(name)
    @name = name 
    @species = "human"
-   @@owners << self 
+   @@all << self 
    @cats = []
    @dogs = []
    
@@ -15,7 +15,7 @@ class Owner
  end 
  
  def self.all 
-   @@owners 
+   @@all 
  end 
  
    def say_species 
