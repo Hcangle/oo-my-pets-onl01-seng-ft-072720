@@ -28,9 +28,7 @@ class Owner
    self.all.clear
  end 
  
- def pets 
-   @pets
- end 
+ 
 
  
 end
