@@ -38,7 +38,14 @@ class Owner
     Dog.all.select{|dog| dog.owner == self}
   end 
   
- 
+ def buy_cat(cat)
+    cats << Cat.new(cat,self)
+  end
+  
+  def buy_dog(dog)
+    dogs << Dog.new(dog,self)
+  end
+
   
   def walk_dogs 
     self.dogs.each {|dog| dog.mood = "happy"}
