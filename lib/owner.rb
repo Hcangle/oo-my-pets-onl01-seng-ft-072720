@@ -29,13 +29,14 @@ class Owner
  end 
  
  def cats 
-   self.all.cats
+   return 
    
  end 
  
  def dogs 
-   self.all.dogs 
+    
  end 
+ 
  
  
 end
