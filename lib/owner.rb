@@ -47,7 +47,12 @@ class Owner
   end
 
  def sell_pets 
-   
+   self.cats.each do |cat|
+      self.cats.delete(cat)
+      cat.owner = nil
+      cat.mood = "nervous"
+    end 
+    
     
  def list_pets
    @dogs = self.dogs.count 
