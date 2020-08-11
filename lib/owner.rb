@@ -27,16 +27,6 @@ class Owner
  def self.reset_all 
    self.all.clear
  end 
- 
- def cats 
-   pets[:cats] << Cat.
-   
- end 
- 
- def dogs 
-    return 
- end 
- 
- 
+
  
 end
