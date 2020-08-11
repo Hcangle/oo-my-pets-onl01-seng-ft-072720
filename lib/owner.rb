@@ -29,12 +29,12 @@ class Owner
  end 
  
  def cats 
-   return 
+   return :cats
    
  end 
  
  def dogs 
-    
+    retun :dogs
  end 
  
  
