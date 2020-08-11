@@ -2,14 +2,17 @@ class Owner
  attr_accessor :name, :pets 
  attr_reader :species 
  
- def initialize(species)
+ @@owners = [] 
+ 
+ def initialize(name)
+   @name = name 
    @species = "human"
  end 
  
- def name 
+ 
    
  def say_species 
-   @species = species 
+   "I am a #{@spceaies}."
  end 
  
  
